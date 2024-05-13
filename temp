@@ -1,0 +1,8 @@
+# Give the department name and maximum salary of instructor where maximum salary of instructor is greater than 50000
+# SELECT DISTINCT instructor.dep_name, SUM(instructor.salary), MAX(instructor.salary) FROM instructor
+# WHERE instructor.dep_name = 'Biology' GROUP BY instructor.dep_name
+# SELECT DISTINCT instructor.dep_name, SUM(instructor.salary), MAX(instructor.salary) FROM instructor
+# GROUP BY instructor.dep_name HAVING MAX(instructor.salary) > 50000
+
+# total and max of salary - handle
+# Find instructor id whose salary is max salary

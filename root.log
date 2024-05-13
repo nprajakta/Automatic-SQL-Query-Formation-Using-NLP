@@ -1,0 +1,312 @@
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 14:36:19
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 14:37:54
+Input : show first 4 employee name
+Query : SELECT * FROM employees LIMIT 4
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 14:39:41
+Input : show age of employee greater than 30 
+Query : SELECT * FROM employees WHERE employees.age > '30'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 14:40:43
+Input : show name of employee and salary in company "Apple"
+Query : SELECT DISTINCT salaries.s_id FROM employees NATURAL JOIN salaries WHERE employees.company = 'Apple'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 14:40:54
+Input : show name of employee in company "Apple"
+Query : SELECT * FROM employees WHERE employees.company = 'Apple'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 14:42:17
+Input : show name of employee in company "Apple"
+Query : SELECT * FROM employees WHERE employees.company = 'Apple'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 15:14:08
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 15:23:13
+Input : show name of employee having age 28 and in "Apple"
+Query : SELECT * FROM employees WHERE employees.age = '28' AND employees.company = 'Apple'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 15:23:37
+Input : show name of employee having age 32 and in "Apple"
+Query : SELECT * FROM employees WHERE employees.age = '32' AND employees.company = 'Apple'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 15:30:12
+Input : show last name of employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 15:31:58
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 15:32:52
+Input : show salary of employees greater than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary > '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 15:33:48
+Input : show name, age and company of all employee from google having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-20 15:49:50
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-24 11:52:37
+Input : show names of all employees having highest salary
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.s_id = ( SELECT MAX(salaries.s_id) FROM salaries )
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Oct-24 11:53:05
+Input : show names of all employees having highest salary in company "Apple"
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE employees.company = 'Apple'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:28:55
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:29:12
+Input : show names of all employees having highest salary in company "Apple"
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE employees.company = 'Apple'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:29:14
+Input : show names of all employees having highest salary in company "Apple"
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE employees.company = 'Apple'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:44:01
+Input : show names of all employees having highest salary in company "Apple"
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE employees.company = 'Apple'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:46:02
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:46:44
+Input : show salary of employees less than 60000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '60000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:46:58
+Input : show salary of employees less than 68000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '68000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:47:12
+Input : show salary of employees less than 65000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '65000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:48:45
+Input : show salary of employees of company meta
+Query : SELECT * FROM employees NATURAL JOIN salaries
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:48:52
+Input : show names,age and company of all employee from google having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:49:07
+Input : show names,age and company of all employee from "google" having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:49:14
+Input : show names,age and company of all employee from "Google" having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.company = 'Google' AND employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:49:38
+Input : show names, age, salary and company of all employee from "Google" having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company, salaries.s_id FROM salaries NATURAL JOIN employees WHERE employees.company = 'Google' AND employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:49:45
+Input : show names, age, salaries and company of all employee from "Google" having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company, salaries.s_id FROM salaries NATURAL JOIN employees WHERE employees.company = 'Google' AND employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:49:52
+Input : show names, age and company of all employee from "Google" having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.company = 'Google' AND employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:50:36
+Input : show names,age and company of all employee from google having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:50:39
+Input : show names,age and company of all employee from google having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:50:50
+Input : show names,age and company of all employee from "Google" having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.company = 'Google' AND employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:51:30
+Input : show names, age and company of all employee from "Google" having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.company = 'Google' AND employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:51:59
+Input : show age of employees greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.age > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:52:26
+Input : show details of employees greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.emp_id > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:52:43
+Input : show details of employees having age greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.age > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:52:58
+Input : show details of employees having age greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.age > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:54:22
+Input : show salaries of all employees  having salary greater than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.s_id > '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:54:32
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 13:54:52
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 14:08:34
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 14:42:28
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 14:42:46
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 14:43:05
+Input : show details of employees greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.emp_id > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 14:43:12
+Input : show details of employees greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.emp_id > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 14:43:25
+Input : show details of employees greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.emp_id > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 14:44:08
+Input : show details of employees greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.emp_id > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 14:44:38
+Input : show details of employees having age greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.age > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 15:00:32
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 15:00:58
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 15:01:22
+Input : show details of employees having age greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.age > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 15:01:52
+Input : show names,age and company of all employee from "Google" having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.company = 'Google' AND employees.age > '25'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 20:28:16
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp				2023-Nov-06 20:50:12
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 00:48:47
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 00:48:56
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:37:39
+Input : show names of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:38:03
+Input : show details of all employee
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:39:03
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:39:22
+Input : show salary of employees greater than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary > '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:40:00
+Input : show the name of tenth employee
+Query : SELECT * FROM employees LIMIT 9, 1
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:41:45
+Input : show name of tenth employee
+Query : SELECT * FROM employees LIMIT 9, 1
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:45:48
+Input : show salary of employees greater than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary > '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:46:44
+Input : show details  of all employees
+Query : SELECT * FROM employees
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:47:13
+Input : show the salary of tenth employee
+Query : SELECT * FROM employees NATURAL JOIN salaries LIMIT 9, 1
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:47:14
+Input : show the salary of tenth employee
+Query : SELECT * FROM employees NATURAL JOIN salaries LIMIT 9, 1
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:50:06
+Input : show details of department
+Query : SELECT * FROM departments
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:50:28
+Input : show details of product management department
+Query : SELECT * FROM departments
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:54:48
+Input : print name of employee having minimum salary 
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.s_id = ( SELECT MIN(salaries.s_id) FROM salaries )
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:57:02
+Input : print name of employee having maximum salary 
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.s_id = ( SELECT MAX(salaries.s_id) FROM salaries )
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-07 10:59:13
+Input : show details of employees having age greater than 30 and in company "Microsoft" 
+Query : SELECT * FROM employees WHERE employees.age > '30' AND employees.company = 'Microsoft'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-09 11:32:48
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Nov-09 12:48:44
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Dec-01 11:31:49
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Dec-01 12:30:42
+Input : show salary of employees less than 70000
+Query : SELECT * FROM employees NATURAL JOIN salaries WHERE salaries.salary < '70000'
+------------------------------------------------------------------------------------------------------------------------
+IP Address : localhost		Database Name : emp1				2023-Dec-01 12:31:28
+Input : show names,age and company of all employee from google having age greater than 25
+Query : SELECT DISTINCT employees.first_name, employees.last_name, employees.age, employees.company FROM employees WHERE employees.age > '25'

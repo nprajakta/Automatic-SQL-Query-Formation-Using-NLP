@@ -1,0 +1,6 @@
+flask
+PyMySQL
+werkzeug
+npm 
+datetime
+xlxswriter

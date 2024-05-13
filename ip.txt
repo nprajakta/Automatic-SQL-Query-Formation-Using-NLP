@@ -1,0 +1,3 @@
+show name of students having  smallest class
+give sorted names of student
+show name of students having maximum class
